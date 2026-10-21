@@ -1,0 +1,231 @@
+/* Aplica estilos básicos a todos os elementos da página. */
+* {
+    font-family: "Source Sans 3", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define o espaçamento e o texto do cabeçalho. */
+header {
+    margin: 44px 0px 144px 76px;
+    text-transform: uppercase;
+}
+
+/* Estiliza os links exibidos no cabeçalho. */
+.link-header {
+    font-weight: 600; /* Define o peso da fonte. */
+    font-size: 24px; /* Define o tamanho do texto. */
+    line-height: 29px; /* Define a altura da linha. */
+    color: #989D9C; /* Define a cor do texto. */
+    cursor: pointer; /* Mostra a mão ao passar o mouse. */
+    margin-right: 23px; /* Cria espaço à direita do link. */
+}
+
+/* Estiliza o botão de login. */
+.login-button {
+    background: #665AE1; /* Define a cor de fundo do botão. */
+    border-radius: 20.5px; /* Arredonda os cantos. */
+    width: 130px; /* Define a largura do botão. */
+    height: 41px; /* Define a altura do botão. */
+    color: #FFFFFF; 
+    border: none; /* Remove a borda padrão. */
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    cursor: pointer;
+    text-transform: uppercase; /* Exibe o texto em letras maiúsculas. */
+}
+
+/* Define o tamanho e o posicionamento da imagem principal. */
+.logo-image {
+    width: 580px;
+    height: 500px;
+    margin-left: 125px; /* Adiciona espaço à esquerda da imagem. */
+    display: inline-block; /* Permite alinhar a imagem com outros elementos. */
+}
+
+/* Posiciona o bloco de conteúdo ao lado da imagem. */
+section {
+    display: inline-block;
+    margin-left: 86px;
+
+}
+
+/* Define a aparência do título principal. */
+h1 {
+    font-weight: 900; /* Deixa o título com a fonte bem forte. */
+    font-size: 100px; /* Define o tamanho do título. */
+    line-height: 122px; /* Define a altura da linha do título. */
+    color: #515151; /* Define a cor do título. */
+
+}
+
+/* Define a aparência do subtítulo. */
+h2 {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 71px;
+    color: #515151;
+    text-align: left;
+}
+
+/* Formata o parágrafo de texto principal. */
+p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #848484;
+    width: 515px;
+    margin-top: 32px; /* Cria espaço acima do parágrafo. */
+    margin-bottom: 65px; /* Cria espaço abaixo do parágrafo. */
+    text-transform: uppercase; 
+    word-spacing: 3px; /* Aumenta o espaço entre as palavras. */
+    text-align: justify; /* Alinha o texto pelas duas margens. */
+    margin-right: 146px;
+}
+
+/* Estiliza o botão para explorar. */
+.explore-button {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 26.02px;
+    color: #000000;
+    background: #ADFF00;
+    border-radius: 50px;
+    width: 239px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    /* Adiciona uma sombra suave ao botão. */
+}
+.p2 {
+    font-family: Arial, Helvetica, sans-serif; /* Usa a primeira fonte disponível na lista. */
+    margin-left: 100px; /* Adiciona espaço à esquerda do elemento. */
+    text-transform: unset; /* Deixa o texto como foi escrito. */
+
+}
+
+b {
+    color: #32AF48;
+    font-weight: 550;
+    
+}
+
+@media screen and (max-width: 1430px) {
+    main {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    section {
+         margin-left: 30px;
+    }
+    
+    .logo-image {
+        width: 50%;
+        height: auto;
+        margin: auto;
+    }
+    p {
+        margin-right: auto;
+    }
+    
+}
+@media screen and (max-width: 1112px) {
+    main {
+        text-align: center;
+    }
+
+    .explore-button {
+        margin-bottom: 35px;
+    }
+
+    nav {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .p2 {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 760px) {
+    body {
+        margin: 0;
+        padding: 8px;
+    }
+    header { 
+        display: none;
+    }
+    p {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+
+    main {
+        height: 100vh;
+        width: 100%;
+        min-height: 100vh;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .logo-image {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        margin: 149px auto 0;
+        width: 354px;
+        height: 317px;
+    }
+    h1 {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 100%;
+        text-align: center;
+        margin-top: 24px;
+        width: 263px;
+        height: 52px;
+        opacity: 1;
+
+    }
+    h2 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 100%;
+        text-align: center;
+        margin: 7px 0 17px 0;
+    }
+}
+@media screen and (max-width: 390px) {
+    .logo-image {
+        margin-top: 50px;
+    }
+}
+
+  /* main {
+  Habilita o Flexbox
+    display: flex;
+  
+  Organiza os itens um abaixo do outro (em coluna)
+    flex-direction: column;
+  
+  Centraliza os itens horizontalmente
+    align-items: center;
+  
+  Centraliza os itens verticalmente na tela (opcional)
+    justify-content: center;
+  
+  Garante que a página ocupe toda a altura da tela
+    min-height: 100vh;
+  
+  Remove margens padrão e define uma fonte/fundo se desejar
+    margin: 0;
+  text-align: center; Garante que os textos fiquem centralizados internamente
+          margin-left: 20%;
+          
+    }  */
